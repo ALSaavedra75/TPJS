@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/493b21e64b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body class="fondo">
+    <!-- BARRA DE NAVEGACION -->
+    <nav class=" deg navbar navbar-expand-lg p-3 mb-2 bg-secondary  fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">Acuario El Pez</a>
+        <!-- <img src="./IMG/ICO2.png" alt="..." width="60"> -->
+        <i class="fa-solid fa-fish-fins fa-xl text-light"></i>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link text-light" href="#tipos">Tipos de peces</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#accesorios">Accesorios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#consultas">Consultas</a>
+            </li> -->
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+            <button class="btn btn-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  <section class="d-flex justify-content-center mt-5 gap-4 flex-wrap"> 
+    
+    <div class="card border-success border border-3 mb-3 mt-5" style="max-width: 18rem;">
+
+      <div class="card-body text-success">
+        <h5 class="card-title">Efectivo <br> tiene un descuento de</h5>
+        <p class="card-text text-center fw-bold fs-2">20 %</p>
+      </div>
+    </div>
+    <div class="card border-primary border border-3 mb-3 mt-5 " style="max-width: 18rem;">
+      
+      <div class="card-body text-primary">
+        <h5 class="card-title">Billetera Virtual <br> tiene un descuento de</h5>
+        <p class="card-text text-center fw-bold fs-2">15 %</p>
+        <h6 class="card-subtitle fw-light">* Con el pago en una cuota</h6>
+      </div>
+    </div>
+    <div class="card border-danger border border-3 mb-3 mt-5" style="max-width: 18rem;">
+      
+      <div class="card-body text-danger">
+        <h5 class="card-title">Tarjeta de Credito <br> tiene un descuento de</h5>
+        <p class="card-text text-center fw-bold fs-2">5 %</p>
+        <h6 class="card-subtitle fw-light">* Con el pago en una cuota</h6>
+      </div>
+    </div>
+  </section> 
+<!-- PANTALLA INICIO -->
+    <section>
+<!-- FORMULARIO -->
+              <h5 class="text-uppercase text-center">super promocion</h5>             
+              <h3 class="text-uppercase text-center">Tu Acuario de 100 L. Completo por : $ 30.000  </h3>     
+    <div class="card-img h-100  d-flex flex-column align-items-center justify-content-center mt-5" >
+        <form  id="form_id" class="row g-3 h-100 w-100 mx-auto border border-info border border-3" style="max-width: 48rem">
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre" autocomplete="off">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="apellido" placeholder="Apellido" autocomplete="off">
+          </div>
+          <div class="col-12">
+            <input type="email" class="form-control" id="Email"placeholder="Tu direccion de E-mail" autocomplete="off">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Cantidad</label>
+            <input required value="1" type="number" class="form-control" id="Cantidad" placeholder="Cantidad" autocomplete="off" min="1" max="4">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Forma de Pago</label>
+            <select id="Pago" class="form-select">
+              <option selected value="0">Seleccionar</option>
+              <option value="20">Efectivo</option>
+              <option value="15">Billetera virtual</option>
+              <option value="5">Tarjeta de credito</option>
+            </select>
+          </div>
+          <div class="alert alert-success bg-info col-md-12 h4" role="alert">  Total a pagar: $  <span id="total" class="h2"></span></div>
+            <br>
+            <!-- <span class="alert alert-info bg-info-emphasis"><h4>Total a pagar $ : </h4></span><span id="total"></span> -->
+            <br>
+          
+          <div class="col-6">
+            <button type="button" id="btnLimpiar" class="btn btn-danger w-100">Borrar</button>
+          <br><br>
+          </div>
+          <div class="col-6">
+            <button type="button" class="btn btn-success w-100" id="btnCalcular">Resumen</button>
+          <br><br>
+          </div>
+        </form>
+                
+      </div>    
+      </section>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+<footer class="deg mt-4 py-3 bg-secondary" style="position: sticky;">
+  <div class="container" data-bs-theme="danger">
+    <ul class="nav justify-content-center">
+      <li class="nav-item"><a href="index.html" class="nav-link px-4 text-light ">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-4 text-light">Contáctanos</a></li>
+      <li class="nav-item"><a class="nav-link px-4 text-light"  href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+      <li class="nav-item"><a class="nav-link px-4 text-light" href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
+      <li class="nav-item"><a class="nav-link px-4 text-light" href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+      <li class="nav-item"><a class="nav-link px-4 text-light" href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+    </ul>
+  </div>
+</footer>
+<script src="./JS/scripts.js"></script>
+  
+  </body>
+</html>

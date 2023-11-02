@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/493b21e64b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body class="fondo">
+    <!-- BARRA DE NAVEGACION -->
+    <nav class=" deg navbar navbar-expand-lg p-3 mb-2 bg-secondary  fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">Acuario El Pez</a>
+        <!-- <img src="./IMG/ICO2.png" alt="..." width="60"> -->
+        <i class="fa-solid fa-fish-fins fa-xl text-light"></i>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#tipos">Tipos de peces</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#accesorios">Accesorios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#consultas">Consultas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning text-bg-dark animate__animated animate__shakeY" href="compra.html">Super Promo del Mes</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+            <button class="btn btn-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+<!-- PANTALLA INICIO -->
+    <section id="home">
+        <div class="card text-bg-dark ">
+          <img class="object-fit-cover" style="height: 50rem; filter: brightness(0.5)" src="./IMG/PRINCIPAL.jpg" alt="imagen de fondo">
+          <div class="card-img-overlay">
+            <div class="h-100 container text-end d-flex flex-column align-items-end justify-content-center fs-5">
+              <br><br>
+              <h1 class="card-title animate__animated animate__shakeX">Acuario "El Pez"</h1>
+              <p class="card-text h3 animate__animated animate__jello" style="max-width: 50.5rem">
+                Somos importadores de productos y marcas Premium, además tenemos más de 45 años de experiencia en el rubro. Ofrecemos servicio de atención al cliente personalizado.               </p>
+              <br><br><br>
+              <p class="card-text h3 animate__animated animate__tada" style="max-width: 50.5rem">
+                Encontranos en el centro comercial de Factory Parque Brown.
+                        Av. Gral. Francisco Fernández de la Cruz 4602 , C1439 C.A.B.A. . 
+                        <h1 class="card-title animate__animated animate__shakeX">Te esperamos!</h1> 
+              </p>
+              <br><br>
+              <div class="d-flex flex-wrap gap-2 justify-content-end">
+                <a href="#tipos" class="btn btn-outline-light px-3 ">Tipos de Peces</a>
+                <a href="#consultas" class="btn btn-outline-light px-3">Consultas</a>
+                <button  type="button" class="btn btn-warning text-bg-dark px-3" ><a href="compra.html " style="color: white;text-decoration: none;">Super Promo del Mes</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <!-- CARDS -->
+    
+    <section class="mt-5" id="tipos" >
+        <br><br>
+        <br><br>
+        <h2 class="text-uppercase text-center text-warning  ">Tipos de Peces</h2>
+      <div class="d-flex justify-content-center mt-3 gap-4 flex-wrap">
+        
+        <div class="card bg-info border border-primary border border-4" style="width: 22rem">
+          <img src="./IMG/FRIA.jpg" class="card-img-top" alt="imagen de pez de agua fria" width="352" height="352" >
+          <div class="card-body">
+            <h5 class="card-title text-center text-success">Agua Fria</h5>
+            <p class="card-text fs-6">Los peces más populares de la acuariofilia son los tropicales, por sus libreas coloridas y sus llamativos patrones. Pero también hay muchos peces exóticos de agua fría que convertirán una triste urna en un escaparate de color y movimiento.</p>
+          </div>
+        </div>
+        <div class="card bg-info border border-danger border border-4 " style="width: 22rem">
+          <img src="./IMG/TROPICAL.jpg" class="card-img-top" alt="imagen de pez tropical" width="352" height="352">
+          <div class="card-body">
+            <h5 class="card-title text-center text-success ">Tropicales</h5>
+            <p class="card-text fs-6">Los peces tropicales son populares como peces para acuario, ya que muy a menudo poseen colores brillantes. En los peces de agua dulce, esta coloración por lo general deriva de la iridiscencia.</p>
+          </div>
+        </div>
+        <div class="card bg-info border border-success border border-4" style="width: 22rem">
+          <img src="./IMG/MARINO.jpeg" class="card-img-top" alt="imagen de pez marino" width="352" height="352" >
+          <div class="card-body">
+            <h5 class="card-title text-center text-success">Marinos</h5>
+            <p class="card-text fs-6">En el mundo acuático existen una amplia variedad de animales, entre los que se destacan los peces marinos, o conocidos también con el nombre de peces de agua salada. Estos son aquellos que viven en las aguas del océano y mares, de los cuales existen un aproximado de 15.000 especies.</p>
+        </div>
+        </div>
+      </div> 
+      <br>
+      <a href="#" class="btn btn-success border border-dark border border-3 ms-4">Volver al Home</a>
+    </section>
+
+      <!-- CARD HORIZONTAL -->
+      
+    <section id="accesorios"> 
+      <br><br>
+        <br><br>
+      <h2 class="text-uppercase text-center text-danger">Accesorios y Acuarios</h2>
+      <br>
+      <div class="card mb-3" >
+        <div class="row g-0 bg-secondary">
+          <div class="col-md-4 border border-success border border-3 ">
+            <img src="./IMG/UTILES.jpg" class="img-fluid rounded-start w-100 h-100 object-fit-cover" alt="imagen de accesorios">
+          </div>
+          <div class="col-md-8 border border-success border border-3">
+            <div class="card-body text-white ">
+              <h3 class="text-uppercase text-center ">Tenemos todos los accesorios para tu Acuario</h3>
+              <p class="card-text">En esta sección encontrarás una gran variedad de Accesorios Técnicos, Accesorios decorativos, Aditivos, Alimentos y otros para mantener tu acuario hermosos y sano</p>
+            </div>
+          </div>
+<br>
+          <div class="col-md-4 border border-warning mt-2 border border-3">
+            <img src="./IMG/modeloacuario.jpg" class="img-fluid rounded-start w-100 h-100 object-fit-cover" alt="imagen de acuarios">
+          </div>
+          <div class="col-md-8 border border-warning mt-2 border border-3 ">
+            <div class="card-body text-white ">
+              <h3 class="text-uppercase text-center ">Diferentes modelos de acuarios</h3>
+              <p class="card-text">Los criterios a la hora de diseñar un nuevo modelo se basan, como es lógico, en consideraciones estéticas para así introducirse en el mercado con mayor facilidad. No son muchas las variaciones que presentan unos acuarios respecto a otros porque prima la vertiente decorativa por encima de otras consideraciones. Son pocos los aficionados que comprarán un tanque cúbico de 500 litros para montar un arrecife si los comparamos con aquellos que escogerán uno largo y estrecho (120 litros) para separar dos ambientes en el salón comedor. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-success border border-dark border border-3 ms-4">Volver al Home</a>
+    </section> 
+      <!-- FORMULARIO -->
+
+      <section class="mt-5" id="">
+        <div class="text-center">
+          <h2 class="text-uppercase text-white" id="consultas">Consultas</h2>
+          <p class="text-light">Completa el siguiente formulario con tus datos.  </p>
+        </div>
+        <form class="row g-3 w-100 mx-auto border border-info border border-3" style="max-width: 48rem">
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre" autocomplete="off">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="apellido" placeholder="Apellido" autocomplete="off">
+          </div>
+          <div class="col-12">
+            <label for="exampleInputEmail1" class="form-label"></label>
+            <input type="email" class="form-control" id="Email"placeholder="Tu direccion de E-mail" autocomplete="off">
+          </div>
+          <div class="col-12">
+            <textarea id="tema" class="form-control" rows="3" placeholder="Escribe aqui tus dudas y/o consultas" autocomplete="off"></textarea>
+            <div id="charla" class="form-text"></div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-success w-100">Enviar</button>
+          <br><br>
+          </div>
+        </form>
+      </section>
+      <br><br>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+<footer class=" deg mt-4 py-3 bg-secondary">
+  <div class="container" data-bs-theme="danger">
+    <ul class="nav justify-content-center">
+      <li class="nav-item"><a href="#" class="nav-link px-4 text-light ">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-4 text-light">Contáctanos</a></li>
+      <li class="nav-item"><a class="nav-link px-4 text-light"  href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+      <li class="nav-item"><a class="nav-link px-4 text-light" href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
+      <li class="nav-item"><a class="nav-link px-4 text-light" href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+      <li class="nav-item"><a class="nav-link px-4 text-light" href="https://twitter.com/" target="_blank"> <i class="fa-brands fa-twitter"></i></a></li>
+    </ul>
+  </div>
+</footer>
+  
+  </body>
+</html>
